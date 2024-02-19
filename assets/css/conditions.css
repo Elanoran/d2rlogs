@@ -1,0 +1,202 @@
+/* Updated Dark-themed CSS for Item Conditions */
+
+#item-conditions-content {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2, h3, h4 {
+    color: #00bcd4;
+}
+
+.item-type {
+    margin-bottom: 20px;
+}
+
+.condition-type {
+    margin-bottom: 10px;
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    background-color: #171717;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-id, .item-name, .item-comment, .conditions {
+    margin-bottom: 5px;
+}
+
+/* Updated styles for improved conditions display */
+.conditions {
+    white-space: pre-line;
+}
+
+/* Add more styles as needed */
+/* Add these styles to your existing CSS file or style tag */
+.item-list {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    margin-bottom: 10px;
+    border: 1px solid #444;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-unique .item-name {
+    color: #c7b377; /* Unique item name color */
+}
+
+.item-set .item-name {
+    color: #0f0; /* Set item name color */
+}
+
+
+.item-list .item .item-name.item-unique {
+    color: #c7b377; /* Unique color */
+}
+
+.item-list .item .item-name.item-set {
+    color: #0f0; /* Set color */
+}
+
+.item-list .item .item-id-label {
+    color: gray;
+}
+
+.item-list .item .item-comment-label {
+    color: gray;
+}
+
+.edit-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.edit-button {
+    cursor: pointer;
+    color: #2196F3;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.condition-row {
+    margin-bottom: 10px;
+}
+
+.item-dropdown {
+    display: none;
+    /* Additional styling for the dropdown */
+}
+
+.item-dropdown {
+    display: none;
+    margin-top: 10px;
+}
+
+.edit-form {
+    margin-top: 10px;
+}
+
+.save-button,
+.cancel-button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Updated Dark-themed CSS for Add Item Condition */
+#addItemForm {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#addItemForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#addItemForm input,
+#addItemForm select,
+#addItemForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #555;
+    border: 1px solid #777;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#addItemForm button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#addItemForm button:hover {
+    background-color: #008c9e;
+}
+
+/* Updated styles for Item Conditions list */
+.item-dropdown {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.edit-form input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+.save-button,
+.cancel-button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+    background-color: #008c9e;
+}
+
+#toggleAddItemForm {
+    background-color: #2f6b7a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#toggleAddItemForm:hover {
+    background-color: #1f5867;
+}
+
+
+/* Add more styles as needed */

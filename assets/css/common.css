@@ -1,0 +1,1012 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Oswald, sans-serif;
+    font-family: 'Diabolica';
+    src: url('font/Diabolica-VRBB.ttf');
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#banner {
+    background: url('../images/00017-2702085341.png') center top no-repeat;
+    background-size: cover;
+    height: 161px;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    color: #2f6b7a;
+    text-align: left;
+}
+
+#banner h1 {
+    margin: 0;
+    left: 0;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a.current {
+    margin-bottom: -2px;
+    border-bottom: 4px solid #c7b377;
+}
+
+
+#menu {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+#content {
+    z-index: 2;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+#item-conditions-content {
+    z-index: 2;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+#menu a.selected::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #555;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+}
+
+.list-container {
+    max-width: 1030px;
+    margin: auto;
+}
+
+.cool-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cool-list-item {
+    margin: 2px;
+    padding: 2px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.pagination a {
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #2f6b7a;
+    color: #333;
+}
+
+.pagination a:hover {
+    background-color: #1f5867;
+}
+
+/* Add a different background color for the current page */
+.pagination .current-page {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background-image: url('news-bg-max.jpg');
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Style for the bot container */
+.bot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style for each bot card */
+.bot-card {
+    /* flex: 0 1 calc(30% - 20px); */
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 245px;
+    color: #ddd;
+    position: relative;
+}
+
+.bot-card {
+background: url('../images/00017-2702085341.png') center top no-repeat;
+    background-size: cover;
+}
+
+.bot-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../images/00017-2702085341.png') center top no-repeat;
+    background-size: cover;
+}
+
+/* Style for the heading (bot name) within each card */
+.bot-card h3 {
+    color: #c7b377;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .bot-card {
+        flex: 0 1 calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bot-card {
+        flex: 0 1 calc(100% - 20px);
+    }
+}
+
+/* Style for the character information within each card */
+.character-info {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Style for the "No records found" message */
+.no-records {
+    font-style: italic;
+    color: #888;
+}
+
+/* Style for the run time within each card */
+.run-time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c7b377;
+    margin-top: 10px;
+}
+
+.current-run {
+    color: #c7b377;
+    font-weight: bold;
+}
+
+/* Style for the run list within each card */
+.run-list {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.run-list-item {
+    margin-bottom: 5px;
+}
+
+#logsList .pagination {
+    margin-top: 10px;
+}
+
+#logsList .pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 1px;
+    color: #fff;
+    background-color: #2f6b7a;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#logsList .pagination a:hover {
+    background-color: #1f5867;
+}
+
+.refresh-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.refresh-container label {
+    margin-left: 5px;
+}
+
+.refresh-container > label:nth-child(2) {
+    margin: initial; 
+    display: initial; 
+    align-items: initial;
+}
+
+/* Style for bot info */
+.bot-info {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Add this to your existing CSS styles */
+.run-list-item.in-run-list {
+    color: #1eff00;
+}
+
+/* Style for character list */
+ul.character-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.character-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.character-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.character-list li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style for character list */
+.character-list li {
+    background-color: #171717;
+    border: 1px solid #555;
+    margin-bottom: 10px;
+    padding: 1px;
+    border-radius:16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.character-list li:hover {
+    background-color: #c7b377;
+}
+
+/* Style for character details */
+.character-details {
+    display: none;
+    background-color: #171717;
+    border: 1px solid #555;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.character-details-container {
+    flex: 1;
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.character-details h2 {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.menu-underline {
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.menu-underline h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.add-button {
+    background-color: #1a1a1a;
+    color: #e5e7eb;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 200px;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #323232;
+}
+
+/* Modal Styles */
+.modal-container {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.5s ease-in-out;
+    padding-top: 10px;
+}
+
+.modal-content {
+    max-width: 1030px;
+    margin: 0 auto;
+    background-color: #171717;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: padding-top 0.5s ease-in-out;
+}
+
+#config-content {
+    background-color: #171717;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#config-content h1 {
+    color: #ffffff;
+}
+
+#config-content form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+#config-content label {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#config-content select, #config-content button {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+
+#config-content input {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+
+#config-content button {
+    cursor: pointer;
+    background-color: #2f6b7a;
+}
+
+#config-content button:hover {
+    background-color: #1f5867;
+}
+
+#config-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+#config-content h2 {
+    color: #c7b377;
+}
+
+.stats-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.stats-icon:hover::after {
+    content: attr(data-stats);
+    position: absolute;
+    background: #232323;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: -20px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* Style for the list container */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(46, 46, 46, 0.1);
+    text-align: justify;
+}
+
+/* Style for the heading */
+.about-container h2 {
+    color: #c7b377;
+}
+
+/* Style for paragraphs */
+.about-container p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Style for the link within the new section */
+.about-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style for the link on hover */
+.about-container a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust button style */
+.add-button {
+    width: 200px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Styling for form elements within the container */
+.list-container form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-container label {
+    margin: 0 5px 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-content .form-pair {
+    display: flex;
+    align-items: center;
+}
+
+.modal-content label {
+    margin-right: 5px;
+}
+
+.list-container input, .list-container select {
+    padding: 8px;
+    background-color: #333;
+    color: #e5e7eb;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
+
+.list-container input, .list-container select {
+    flex: 1;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #333;
+    color: #e5e7eb;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
+
+.list-container button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #2f6b7a;
+    color: #e5e7eb;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-container button:hover {
+    background-color: #1f5867;
+}
+
+.item-type {
+    font-style: italic;
+  }
+
+#characterLevel {
+    width: 80px !important;
+    flex: 0;
+}
+
+#characterName {
+    width: 200px !important;
+    flex: 0;
+}
+
+form#addCharacterForm label {
+    margin-left: 5px;
+}
+
+#characterClass {
+    width: 200px !important;
+    flex: 0;
+}
+
+#characterSpec {
+    width: 150px !important;
+    flex: 0;
+}
+
+#characterName label{
+    margin-left: 0px;
+}
+
+/* Adjust modal visibility */
+.modal-container.show {
+    max-height: 100px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-content {
+    visibility: hidden;
+    width: 200px;
+    background-color: #171717;
+    color: #eceefe;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 0;
+    margin-left: -10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+.tooltip:hover .tooltip-content {
+    visibility: visible;
+}
+
+/* Stats Styles */
+.stats {
+    margin-top: 10px;
+}
+
+.item-date {
+    color: #999898;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.character-info a {
+    text-decoration: none;
+    color: #0070dd;
+}
+
+.character-info a:hover {
+    text-decoration: underline;
+}
+
+/* Item colors based on rarity */
+.item-lowquality {
+    color: #737373;
+}
+.item-normal {
+    color: #fff;
+}
+.item-magic {
+    color: #6969ff;
+}
+.item-rare {
+    color: #ffff35;
+}
+.item-set {
+    color: #0f0;
+}
+.item-unique {
+    color: #c7b377;
+}
+
+/* White Stats */
+.stats .white {
+    color: #eceefe;
+}
+
+/* Blue Stats */
+.stats .blue {
+    color: #6969ff;
+}
+
+/* Green Stats Values */
+.stats .green {
+    color: #2bd999;
+}
+
+/* Style for the character details list */
+.character-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for each item in the list */
+.character-details li {
+    margin-bottom: 2px;
+    padding: 16px;
+    display: flex;
+    line-height: 1.2;
+}
+
+/* Style for the hidden checkbox */
+.character-details li input[type="checkbox"] {
+    display: none;
+}
+
+/* Style for the item name */
+.character-details li .item-quality {
+    font-weight: bold;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+/* Style for the date */
+.character-details li .item-date {
+    color: #777;
+    margin-left: 10px;
+}
+
+/* Style for the character details when in edit mode */
+.character-details.edit-mode li {
+    border-color: #ccc;
+    background-color: #eee;
+}
+
+/* Style for the visible checkboxes in edit mode */
+.character-details.edit-mode li input[type="checkbox"] {
+    display: inline;
+    align-self: center;
+}
+
+.character-details.edit-mode li #moveBtn,
+.character-details.edit-mode li #deleteBtn {
+    display: inline;
+    margin-right: 5px;
+}
+
+.delete-button {
+    top: 5px;
+    right: 5px;
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.two-column-container {
+    display: flex;
+}
+
+.breadcrumbs {
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.character-details-container {
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 680px;
+    justify-content: space-between;
+    min-height: 800px;
+    border-width: 0;
+    border: 1px solid #444;
+}
+
+.items-list-scroll {
+    flex-grow: 1;
+}
+
+.delete-button {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+div.items-container ul {
+    list-style: none;
+}
+
+.items-container {
+    flex: 1;
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 400px;
+    border: 1px solid #444;
+}
+
+
+#search-input {
+    width: calc(99% - 50px);
+    padding: 8px;
+    margin: 0;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    outline: none;
+}
+
+#search-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.items-list-scroll
+{
+  max-height: 740px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #171717;
+  /*max-height: 400px;*/
+}
+
+/* Style for the message overlay */
+.message-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('your-background-image.jpg'); /* Add your background image path here */
+    background-size: cover; /* Adjust the size as needed */
+}
+
+/* You can also add more styles to make it visually appealing */
+.message-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.message-overlay p {
+    font-size: 16px;
+}
+
+.message-overlay button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.message-overlay button:hover {
+    background-color: #45a049;
+}
+
+.footer-dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    align-self: flex-start;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.character-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.character-item {
+    min-height: 160px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.character-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.character-card {
+    width: 500px;
+    height: 164px;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #c7b377;
+}
+
+.character-card:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .character-item {
+        width: 100%;
+    }
+}
